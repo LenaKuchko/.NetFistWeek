@@ -1,0 +1,24 @@
+﻿@model CandyStore.Models.Product
+
+@{
+    ViewData["Title"] = "Product Info";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+
+}
+
+<h2>Details</h2>
+<hr />
+@Html.DisplayNameFor(model => model.Title): @Html.DisplayFor(model => model.Title)
+@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)
+@Html.DisplayNameFor(model => model.Size): @Html.DisplayFor(model => model.Size)
+@Html.DisplayNameFor(model => model.Cost): @Html.DisplayFor(model => model.Cost)
+
+<p>@ViewBag.Producer.Name</p>
+<p>@ViewBag.Producer.Country</p>
+
+
+<p>@Html.ActionLink("Back to products", "Index")</p>
+<p>@Html.ActionLink("Edit", "Edit", new { id = Model.ProducerId })</p>
+<p>@Html.ActionLink("Delete", "Delete", new { id = Model.ProducerId })</p>
+

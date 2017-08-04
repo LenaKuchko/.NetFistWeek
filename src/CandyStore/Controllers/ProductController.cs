@@ -35,6 +35,7 @@ namespace CandyStore.Controllers
         public IActionResult Edit(int id)
         {
             Product thisProduct = db.Products.FirstOrDefault(products => products.ProductId == id);
+            ViewBag.ProducerId = new SelectList(db.Producers, "ProducerId", "Name");
             return View(thisProduct);
         }
 
@@ -64,6 +65,9 @@ namespace CandyStore.Controllers
         public IActionResult Details(int id)
         {
             Product thisProduct = db.Products.FirstOrDefault(products => products.ProductId == id);
+            //ViewData["Producer"] =  db.Producers.FirstOrDefault(producers => producers.ProducerId == thisProduct.ProducerId);
+            ViewBag.Producer = db.Producers.FirstOrDefault(producers => producers.ProducerId == thisProduct.ProducerId);
+
             return View(thisProduct);
         }
     }
