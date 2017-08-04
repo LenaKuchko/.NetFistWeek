@@ -5,17 +5,18 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-    <h2>Producers</h2>
-    <h4>@Html.DisplayNameFor(model => model.Name)</h4>
-    <ul>
-        @foreach (var listProducers in Model)
-        {
-            <li>
-                @Html.DisplayFor(modelProducer => listProducers.Name) |
-                @*@Html.ActionLink("Edit", "Edit", new { id = listLocation.LocationId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = listLocation.LocationId }) |*@
-                @Html.ActionLink("Details", "Details", new { id = listProducers.ProducerId })
-            </li>
-        }
-      </ul>
-    @Html.ActionLink("Add new producer", "Create")
+<div class="boxes">
+    @foreach (var listProducers in Model)
+    {
+        <div class="box">
+            <div class="imgTemplate">
+            </div>
+            @Html.DisplayFor(modelProducer => listProducers.Name) 
+            <br />
+            @Html.ActionLink("View", "Details", new { id = listProducers.ProducerId })
+        </div>
+    }
+
+</div>
+<button class="btn btn-success">@Html.ActionLink("Add new producer", "Create")</button>
+    

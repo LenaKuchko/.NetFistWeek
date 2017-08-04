@@ -14,6 +14,7 @@ namespace CandyStore.Models
         public string Description { get; set; }
         public int Cost { get; set; }
         public string Size { get; set; }
+        public string Image { get; set; }
 
     }
 }

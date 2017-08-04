@@ -8,9 +8,10 @@ using CandyStore.Models;
 namespace CandyStore.Migrations
 {
     [DbContext(typeof(CandyStoreContext))]
-    partial class CandyStoreContextModelSnapshot : ModelSnapshot
+    [Migration("20170804220307_AddImageToProduct")]
+    partial class AddImageToProduct
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1")

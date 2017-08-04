@@ -54,3 +54,37 @@ textarea {
 .navbar-brand a {
     color: white;
 }
+
+.boxes {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding-left: 0px;
+    justify-content: space-between;
+}
+.box {
+    background-color: #D9F49A;
+    flex: 0 0 250px;
+    margin: 10px;
+    border: 1px solid #8DAF3B;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    color: #634133;
+    height: auto;
+    font-size: 20px;
+    text-align:center;
+}
+
+.imgTemplate{
+    height: 250px;
+    width: 270px;
+    background: url("../images/CandyBar.png") no-repeat;
+    border-radius: 5px 5px 0 0;
+}
+.btn {
+    background-color: #f06292;
+}
+.btn:hover{
+    background-color:#D9F49A;
+}
