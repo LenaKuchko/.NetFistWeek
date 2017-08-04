@@ -7,8 +7,8 @@
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
@@ -18,37 +18,27 @@ textarea {
     max-width: 280px;
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
-}
-
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"]
-{
-    width: 100%;
-}
-
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-  /* Hide captions */
-  .carousel-caption {
-    display: none
-  }
-}
 
 .navbar {
     background: #f06292;
+    font-weight:900;
+    text-shadow: 3px 3px rgba(98,137,9,.14);
+    text-align:center;
+    font-size: 20px;
 }
 
 .top-head {
     height: 84px;
     background: url(https://cdn6.bigcommerce.com/s-1jnzelj6/product_images/uploaded_images/promo-bar.png?t=1478113380&_ga=1.78603549.828831475.1478175223);
     color: white;
+    font-size: 18px;
+    font-weight:900;
+    text-shadow: 3px 3px rgba(98,137,9,.14);
+    text-align:center;
+    padding-top: 25px;
 }
 .middle-head {
-    height: 135px;
+    height: 145px;
     background: white;
 }
 .logo {

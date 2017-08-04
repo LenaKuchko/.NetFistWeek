@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment names="Staging,Production">
-        <link href="//fonts.googleapis.com/css?family=Roboto:700,400,300|Lato:300,400,700,900" />
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
@@ -19,11 +19,11 @@
     @Html.ApplicationInsightsJavaScript(TelemetryConfiguration)
 </head>
 <body>
-    <div class="navbar navbar navbar-fixed-top">
-        <div class="container-fluid">
+    <div class="container-fluid">
+        <div class="navbar navbar navbar-fixed-top">
             <div class="row top-head">
                 <div class="col-md-12">
-
+                    <p>FREE GROUND SHIPPING ON ORDERS OVER $99!</p>
                 </div>
             </div>
             <div class="row middle-head">
@@ -53,34 +53,23 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
-    <div class="container body-content">
+    <div class="container">
+        <div class="row">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed placerat nisi. Pellentesque imperdiet, sapien a aliquam placerat, mi tortor ultricies velit, sed pellentesque justo felis ac turpis. Quisque vel ante risus. Nullam dolor nibh, faucibus eu lacus vel, porta pulvinar elit. Cras vehicula augue ex, et convallis nibh rutrum sed. In rutrum nec nunc nec volutpat. Ut posuere pulvinar pulvinar.
+
+Nunc lectus diam, eleifend eget sem et, consequat viverra orci. Nunc egestas id sem sed placerat. Etiam imperdiet justo at porttitor cursus. Nulla sed posuere augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis metus eget lorem tempus, eu tempus ante finibus. Sed convallis euismod feugiat. Vestibulum aliquam pharetra arcu. Ut vitae libero eu turpis porta molestie. Duis sapien enim, tempor vitae ex sit amet, tempor malesuada turpis. Ut eu placerat tortor, vitae tempor massa. In velit erat, volutpat efficitur condimentum non, blandit pretium lacus. Nullam ac hendrerit nulla, feugiat faucibus justo. Donec facilisis nulla vel felis ultricies, ac accumsan velit laoreet. Nunc tincidunt vehicula neque, ut pulvinar ipsum cursus vitae. Aliquam viverra vulputate viverra.
+
+Praesent quis felis blandit lacus dapibus iaculis. Phasellus porta turpis sit amet lectus tincidunt vehicula. Curabitur ut lacinia neque, sed hendrerit ipsum. Proin nisl tellus, mattis nec commodo id, tincidunt eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget vehicula justo. Etiam scelerisque vehicula nibh vel mollis. Curabitur at purus laoreet, efficitur dui ut, iaculis metus. Aliquam erat volutpat. Donec sed nibh ac augue consectetur tincidunt at et purus. Praesent in blandit orci. Integer semper vestibulum dolor, ut efficitur tortor dictum eu. Praesent porttitor urna vel commodo tempor. Integer efficitur justo nec quam euismod, et auctor augue pellentesque.
+
         @RenderBody()
+
+        </div>
         <hr />
         <footer>
             <p>&copy; 2017 - CandyStore</p>
         </footer>
     </div>
-
-    <environment names="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment names="Staging,Production">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
-
-    @RenderSection("scripts", required: false)
 </body>
 </html>
