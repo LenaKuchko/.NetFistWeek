@@ -13,12 +13,12 @@ namespace CandyStore.Models
 
         }
         public virtual DbSet<Producer> Producers {get; set;}
-        public virtual DbSet<Rpoduct> Products { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(@"Server=(LocalDB)\MSSQLLocalDB;Database=TravelBlog;integrated security=True");
+            options.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=CandyStore;integrated security=True");
         }
 
         public CandyStoreContext(DbContextOptions<CandyStoreContext> options) : base(options)
