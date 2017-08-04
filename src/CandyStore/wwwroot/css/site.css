@@ -36,3 +36,13 @@ textarea {
     display: none
   }
 }
+
+.navbar {
+    background: #f06292;
+}
+
+.top-head {
+    height: 84px;
+    background: url(https://cdn6.bigcommerce.com/s-1jnzelj6/product_images/uploaded_images/promo-bar.png?t=1478113380&_ga=1.78603549.828831475.1478175223);
+    color: white;
+}
