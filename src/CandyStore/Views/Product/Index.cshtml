@@ -1,0 +1,25 @@
+﻿@model IEnumerable<CandyStore.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Products</h2>
+<main class="boxes">
+
+    @foreach (var listProduct in Model)
+    {
+        <div class="box">
+            <div class="imgTemplate"></div>
+            @Html.DisplayFor(modelProducts => listProduct.Title)
+
+            <div class="linksInBox">
+                @Html.ActionLink("Details", "Details", new { id = listProduct.ProductId }) |
+                @Html.ActionLink("Edit", "Edit", new { id = listProduct.ProductId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = listProduct.ProductId })
+            </div>
+        </div>
+    }
+</main>
+<p>@Html.ActionLink("Add new product", "Create")</p>

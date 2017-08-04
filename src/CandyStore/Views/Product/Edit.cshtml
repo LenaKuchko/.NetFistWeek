@@ -1,0 +1,41 @@
+﻿@model CandyStore.Models.Product
+
+@{
+    ViewData["Title"] = "Edit Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+<hr />
+<h4>Edit this Producer: @Html.DisplayFor(model => model.Title)</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.ProductId)
+    @Html.LabelFor(model => model.Title)
+    @Html.EditorFor(model => model.Title)
+
+    <p>
+        @Html.LabelFor(model => model.Size)
+        @Html.EditorFor(model => model.Size)
+
+    </p>
+
+    <p>
+        @Html.Label("Producer")
+        @Html.DropDownList("ProducerId")
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.Description)
+        @Html.EditorFor(model => model.Description)
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.Cost)
+        @Html.EditorFor(model => model.Cost)
+    </p>
+
+    <input type="submit" value="Save" />
+}
+<p>@Html.ActionLink("Back to products", "Index")</p>

@@ -12,18 +12,5 @@ namespace CandyStore.Controllers
         {
             return View();
         }
-
-        public IActionResult About()
-        {
-            
-            return View("Producer", "Index");
-        }
-
-        public IActionResult Contact()
-        {
-            
-
-            return View();
-        }
     }
 }
