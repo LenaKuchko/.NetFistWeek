@@ -1,0 +1,22 @@
+﻿@model IEnumerable<CandyStore.Models.Producer>
+
+@{
+    ViewData["Title"] = "Candy Store";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    <h2>Producers</h2>
+    <h4>@Html.DisplayNameFor(model => model.Name)</h4>
+    <ul>
+        @foreach (var listProducers in Model)
+        {
+            <li>
+                @Html.DisplayFor(modelProducer => listProducers.Name) |
+                @*@Html.ActionLink("Edit", "Edit", new { id = listLocation.LocationId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = listLocation.LocationId }) |*@
+                @Html.ActionLink("Details", "Details", new { id = listProducers.ProducerId })
+            </li>
+        }
+      </ul>
+    @Html.ActionLink("Add new producer", "Create");

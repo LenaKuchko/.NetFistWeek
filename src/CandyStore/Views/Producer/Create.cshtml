@@ -1,0 +1,20 @@
+﻿@model CandyStore.Models.Producer
+
+@{
+    ViewData["Title"] = "Create Producer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create Producer</h2>
+<hr />
+<h4>Add a new Producer</h4>
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name)
+
+    @Html.LabelFor(model => model.Country)
+    @Html.TextBoxFor(model => model.Country)
+    <input type="submit" value="Add a new producer" />
+}
+<p>@Html.ActionLink("Back to producers", "Index")</p>
