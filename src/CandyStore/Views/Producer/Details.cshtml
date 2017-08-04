@@ -18,24 +18,12 @@
     @foreach (var products in Model.Products)
     {
         <li>
-            @Html.ActionLink(products., "Details", "Experiences", new { id = experience.ExperienceId }, null) <br />
-        @if (experience.People.Count > 0)
-                {
-
-
-            <p>People I Met:</p>
-                <ul>
-
-                    @foreach (var person in experience.People)
-                    {
-
-                        <li>@Html.DisplayFor(people => person.Name)</li>
-
-                    }
-                </ul>
-        }
-    </li>
+            @Html.ActionLink(products.Title, "Details", "Product", new { id = products.ProducerId }, null) <br />
+        </li>
 
     }
 </ul>
-<p>@Html.ActionLink("Back to list view", "Index")</p>
+<p>@Html.ActionLink("Back to producers", "Index")</p>
+<p>@Html.ActionLink("Edit", "Edit", new { id = Model.ProducerId})</p>
+<p>@Html.ActionLink("Delete", "Delete", new { id = Model.ProducerId})</p>
+
