@@ -1,0 +1,28 @@
+﻿@model IEnumerable<CandyStore.Models.Producer>
+
+@{
+    ViewData["Title"] = "Candy Store";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+ <div class="panel panel-default">
+        <!-- Default panel contents -->
+    <div class="panel-heading">Producers which Company is working with</div>
+    @foreach (var listProducers in Model)
+    {
+        <!-- List group -->
+        <ul class="list-group">
+            <li class="list-group-item"><h4>@Html.DisplayFor(modelProducer => listProducers.Name)</h4>
+            @Html.ActionLink("Edit", "Edit", new { id = listProducers.ProducerId })
+            @Html.ActionLink("Delete", "Delete", new { id = listProducers.ProducerId })</li>
+        </ul>
+    }
+  </div>
+
+
+
+
+
+
+ </div>
+<button class="btn btn-success">@Html.ActionLink("Add new producer", "Create")</button>

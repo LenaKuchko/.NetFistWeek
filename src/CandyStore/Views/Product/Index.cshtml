@@ -10,8 +10,8 @@
 
     @foreach (var listProduct in Model)
     {
-        <div class="box">
-            <div class="imgTemplate"></div>
+        <div class="box-item">
+           <img class="sell-item" src="@Url.Content(listProduct.Image)" alt="" />
             @Html.DisplayFor(modelProducts => listProduct.Title)
 
             <div class="linksInBox">

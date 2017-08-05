@@ -20,6 +20,11 @@ namespace CandyStore.Controllers
             return View();
         }
 
+        public IActionResult Admin()
+        {
+            return View(db.Producers.ToList());
+        }
+
         [HttpPost]
         public IActionResult Create(Producer producer)
         {

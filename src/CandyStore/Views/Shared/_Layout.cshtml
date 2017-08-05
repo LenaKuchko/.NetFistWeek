@@ -46,11 +46,19 @@
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a asp-area="" asp-controller="Producer" asp-action="Admin">Producers</a></li>
+                                    <li><a asp-area="" asp-controller="Product" asp-action="Details">Products</a></li>
+                                </ul>
+                            </li>
                             <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                             <li><a asp-area="" asp-controller="Producer" asp-action="Index">Producers</a></li>
                             <li><a asp-area="" asp-controller="Product" asp-action="Index">Products</a></li>
                         </ul>
-                    </div>
+                    </div> 
+
                 </div>
             </div>
         </div>
@@ -71,5 +79,23 @@ Praesent quis felis blandit lacus dapibus iaculis. Phasellus porta turpis sit am
             <p>&copy; 2017 - CandyStore</p>
         </footer>
     </div>
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("scripts", required: false)
 </body>
 </html>
