@@ -19,61 +19,51 @@
     @Html.ApplicationInsightsJavaScript(TelemetryConfiguration)
 </head>
 <body>
-    <div class="container-fluid">
         <div class="navbar navbar navbar-fixed-top">
-            <div class="row top-head">
-                <div class="col-md-12">
-                    <p>FREE GROUND SHIPPING ON ORDERS OVER $99!</p>
+            <div class="container-fluid">
+                <div class="row top-head">
+                    <div class="col-md-12">
+                        <p>FREE GROUND SHIPPING ON ORDERS OVER $99!</p>
+                    </div>
+                </div>
+                <div class="row middle-head">
+                    <div class="col-md-12">
+                        <div class="logo">
+                            <img src="~/images/logo.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div row="col-md-12">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">CandyStore</a>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a asp-area="" asp-controller="Producer" asp-action="Admin">Producers</a></li>
+                                        <li><a asp-area="" asp-controller="Product" asp-action="Details">Products</a></li>
+                                    </ul>
+                                </li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li><a asp-area="" asp-controller="Producer" asp-action="Index">Producers</a></li>
+                                <li><a asp-area="" asp-controller="Product" asp-action="Index">Products</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row middle-head">
-                <div class="col-md-12">
-                    <div class="logo">
-                        <img src="~/images/logo.png"/>
-                    </div>
-                </div>           
-            </div>
-            <div class="row">
-                <div row="col-md-12">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">CandyStore</a>
-                    </div>
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a asp-area="" asp-controller="Producer" asp-action="Admin">Producers</a></li>
-                                    <li><a asp-area="" asp-controller="Product" asp-action="Details">Products</a></li>
-                                </ul>
-                            </li>
-                            <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                            <li><a asp-area="" asp-controller="Producer" asp-action="Index">Producers</a></li>
-                            <li><a asp-area="" asp-controller="Product" asp-action="Index">Products</a></li>
-                        </ul>
-                    </div> 
-
-                </div>
-            </div>
-        </div>
     </div>
     <div class="container">
-        <div class="row">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed placerat nisi. Pellentesque imperdiet, sapien a aliquam placerat, mi tortor ultricies velit, sed pellentesque justo felis ac turpis. Quisque vel ante risus. Nullam dolor nibh, faucibus eu lacus vel, porta pulvinar elit. Cras vehicula augue ex, et convallis nibh rutrum sed. In rutrum nec nunc nec volutpat. Ut posuere pulvinar pulvinar.
-
-Nunc lectus diam, eleifend eget sem et, consequat viverra orci. Nunc egestas id sem sed placerat. Etiam imperdiet justo at porttitor cursus. Nulla sed posuere augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis metus eget lorem tempus, eu tempus ante finibus. Sed convallis euismod feugiat. Vestibulum aliquam pharetra arcu. Ut vitae libero eu turpis porta molestie. Duis sapien enim, tempor vitae ex sit amet, tempor malesuada turpis. Ut eu placerat tortor, vitae tempor massa. In velit erat, volutpat efficitur condimentum non, blandit pretium lacus. Nullam ac hendrerit nulla, feugiat faucibus justo. Donec facilisis nulla vel felis ultricies, ac accumsan velit laoreet. Nunc tincidunt vehicula neque, ut pulvinar ipsum cursus vitae. Aliquam viverra vulputate viverra.
-
-Praesent quis felis blandit lacus dapibus iaculis. Phasellus porta turpis sit amet lectus tincidunt vehicula. Curabitur ut lacinia neque, sed hendrerit ipsum. Proin nisl tellus, mattis nec commodo id, tincidunt eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget vehicula justo. Etiam scelerisque vehicula nibh vel mollis. Curabitur at purus laoreet, efficitur dui ut, iaculis metus. Aliquam erat volutpat. Donec sed nibh ac augue consectetur tincidunt at et purus. Praesent in blandit orci. Integer semper vestibulum dolor, ut efficitur tortor dictum eu. Praesent porttitor urna vel commodo tempor. Integer efficitur justo nec quam euismod, et auctor augue pellentesque.
-
         @RenderBody()
-
-        </div>
         <hr />
         <footer>
             <p>&copy; 2017 - CandyStore</p>
