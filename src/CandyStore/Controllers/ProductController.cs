@@ -24,6 +24,11 @@ namespace CandyStore.Controllers
             return View();
         }
 
+        public IActionResult Admin()
+        {
+            return View(db.Products.ToList());
+        }
+
         [HttpPost]
         public IActionResult Create(Product product)
         {

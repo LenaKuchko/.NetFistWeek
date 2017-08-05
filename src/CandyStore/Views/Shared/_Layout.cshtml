@@ -50,7 +50,7 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
                                     <ul class="dropdown-menu">
                                         <li><a asp-area="" asp-controller="Producer" asp-action="Admin">Producers</a></li>
-                                        <li><a asp-area="" asp-controller="Product" asp-action="Details">Products</a></li>
+                                        <li><a asp-area="" asp-controller="Product" asp-action="Admin">Products</a></li>
                                     </ul>
                                 </li>
                                 <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
@@ -62,7 +62,7 @@
                 </div>
             </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         @RenderBody()
         <hr />
         <footer>

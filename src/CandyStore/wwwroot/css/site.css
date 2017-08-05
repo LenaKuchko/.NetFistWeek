@@ -1,7 +1,13 @@
 ﻿body {
-    padding-top: 280px;
+    padding-top: 300px;
     padding-bottom: 20px;
     font-family: 'Lato', sans-serif;
+}
+.main {
+    margin-top: -20px;
+    background-image:url(../images/wine-gummy-bears.jpg);
+    background-repeat:repeat;
+   
 }
 
 /* Wrapping element */
@@ -17,7 +23,6 @@ select,
 textarea {
     max-width: 280px;
 }
-
 
 .navbar {
     background: #f06292;
@@ -37,6 +42,9 @@ textarea {
     text-align:center;
     padding-top: 25px;
 }
+.story {
+    margin-top: 25px;
+}
 .middle-head {
     height: 145px;
     background: white;
@@ -54,6 +62,7 @@ textarea {
     color: white;
 }
 .panel-danger > .panel-heading {
+
     background-color: #D9F49A;
 }
 
@@ -62,7 +71,7 @@ textarea {
 }
 
 .boxes {
-    padding-top: 60px;
+ 
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
