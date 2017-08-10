@@ -27,8 +27,6 @@ namespace CandyStore.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<string>("PartnerSince");
-
                     b.HasKey("ProducerId");
 
                     b.ToTable("Producers");

@@ -8,8 +8,8 @@ using CandyStore.Models;
 namespace CandyStore.Migrations
 {
     [DbContext(typeof(CandyStoreContext))]
-    [Migration("20170805005417_AddDescriptionAndDateForProducer")]
-    partial class AddDescriptionAndDateForProducer
+    [Migration("20170810030558_AddDescriptionColumn")]
+    partial class AddDescriptionColumn
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,8 +27,6 @@ namespace CandyStore.Migrations
                     b.Property<string>("Description");
 
                     b.Property<string>("Name");
-
-                    b.Property<string>("PartnerSince");
 
                     b.HasKey("ProducerId");
 

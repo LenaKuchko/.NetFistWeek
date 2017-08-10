@@ -220,8 +220,8 @@ C:\Users\Elena\Desktop\CandyStore\src\CandyStore\Migrations\20170804165230_AddTi
 C:\Users\Elena\Desktop\CandyStore\src\CandyStore\Migrations\20170804165230_AddTitlePropToProduct.Designer.cs
 C:\Users\Elena\Desktop\CandyStore\src\CandyStore\Migrations\20170804220307_AddImageToProduct.cs
 C:\Users\Elena\Desktop\CandyStore\src\CandyStore\Migrations\20170804220307_AddImageToProduct.Designer.cs
-C:\Users\Elena\Desktop\CandyStore\src\CandyStore\Migrations\20170805005417_AddDescriptionAndDateForProducer.cs
-C:\Users\Elena\Desktop\CandyStore\src\CandyStore\Migrations\20170805005417_AddDescriptionAndDateForProducer.Designer.cs
+C:\Users\Elena\Desktop\CandyStore\src\CandyStore\Migrations\20170810030558_AddDescriptionColumn.cs
+C:\Users\Elena\Desktop\CandyStore\src\CandyStore\Migrations\20170810030558_AddDescriptionColumn.Designer.cs
 C:\Users\Elena\Desktop\CandyStore\src\CandyStore\Migrations\CandyStoreContextModelSnapshot.cs
 C:\Users\Elena\Desktop\CandyStore\src\CandyStore\Models\CandyStoreContext.cs
 C:\Users\Elena\Desktop\CandyStore\src\CandyStore\Models\Producer.cs

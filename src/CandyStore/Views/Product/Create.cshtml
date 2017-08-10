@@ -41,7 +41,7 @@
     </p>
     <p>
         @Html.LabelFor(model => model.Image)
-        @Html.TextBoxFor(model => model.Image)
+        @Html.TextBoxFor(model => model.Image, new { @placeholder = "enter url"})
     </p>
 
     <input type="submit" value="Add a new product" />

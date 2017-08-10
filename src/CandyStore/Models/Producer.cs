@@ -6,19 +6,18 @@ using System;
 
 namespace CandyStore.Models
 {
-        [Table("Producers")]
+    [Table("Producers")]
     public class Producer
     {
         public Producer()
         {
-            this.Products = new HashSet<Product>();
+            //this.Products = new HashSet<Product>();
         }
         [Key]
         public int ProducerId { get; set; }
         public string Name { get; set; }
         public string Country { get; set; }
         public string Description { get; set; }
-        public string PartnerSince { get; set; }
 
         public virtual ICollection<Product> Products { get; set; }
     }

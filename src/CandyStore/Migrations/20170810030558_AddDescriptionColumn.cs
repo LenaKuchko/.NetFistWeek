@@ -4,22 +4,21 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CandyStore.Migrations
 {
-    public partial class AddDescriptionAndDateForProducer : Migration
+    public partial class AddDescriptionColumn : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterColumn<string>(
-                name: "PartnerSince",
+            migrationBuilder.AddColumn<string>(
+                name: "Description",
                 table: "Producers",
                 nullable: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterColumn<DateTime>(
-                name: "PartnerSince",
-                table: "Producers",
-                nullable: false);
+            migrationBuilder.DropColumn(
+                name: "Description",
+                table: "Producers");
         }
     }
 }
